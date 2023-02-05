@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 75;
+    z-index: 999;
+}
+.brand{
+    display: flex;
+    align-items: center;
+
+}
+.icon img{
+    width: 25;
+    height: 25;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+#count{
+    color: red;
+    font-weight: bolder;
+}
+
+.cart-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.cart-item .name{
+    flex: 3;
+}
+.cart-item .price{
+    flex: 1;
+    color: green;
+}
+.cart-item button{
+    flex: 1;
+    padding: 10;
+    background: none;
+    border: none;
+}
+.cart-item button:hover{
+    border-radius: 100%;
+    background: rgb(194, 194, 194);
+}
+.cart-item .amount{
+    width: 70px;
+    padding: 5px
+}
+.cart-item #img{
+    height: 50;
+    width: 50;
+}
+
+#cart{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+    height: 50;
+}
+
+#cart .dropdown-content{
+    top:50%;
+    position: absolute;
+    width: 500;
+    display: none;
+    flex-direction: column;
+    max-height: 500;
+}
+#cart .dropdown-content ul{
+    overflow-y: scroll;
+}
+#cart:hover .dropdown-content{
+    display: flex;
+    z-index: 999;
+    outline: 2px solid gray;
+    background: white;
+}
+#checkout-btn{
+    border: none;
+    padding: 10;
+}
+#checkout-btn:hover{
+    background: black;
+    color: white;
+}
+.side-bar{
+    float: left;
+    width: 300;
+    box-sizing:border-box;
+    padding: 20px;
+    display: none;
+}
+
+.products{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.product{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.product:hover{
+    outline:2px solid rgb(214, 214, 214);
+}
+.product .product-img{
+    width: 200;
+    height: 200;
+    object-fit: cover;
+    align-self: center;
+}
+.product .content{
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.product button{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background: none;
+}
+.product button:hover{
+    background: black;
+    color: white;
+}

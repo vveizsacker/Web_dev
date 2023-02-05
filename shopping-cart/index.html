@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script defer src="cart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="brand">
+            <div class="icon"><img src="icons/store.svg" alt=""></div> <span>WEBSHOP</span>
+        </div>
+
+        <div id="cart">
+            <div class="icon"><img src="icons/cart.svg" alt=""></div>
+            <span id="count"></span>
+            
+            <div class="dropdown-content" >
+                    <ul id="cart-list">
+
+                    </ul>
+                    <span id="empty" class="cart-item">No Items In Cart</span>
+                    <button id="checkout-btn">Checkout</button>
+            </div>
+            
+            <template id="cart-item-template">
+                <div class="cart-item">
+                    <img id="img" src="" alt="">
+                    <span class="name"></span>
+                    <span class="price"></span>
+                    <input type="number" class="amount" type="text">
+
+                    
+                    <span>
+                        <button>
+                            <div class="icon">
+                                <img id="delete" src="icons/delete.svg" alt="">
+                            </div>
+                        </button>
+                    </span>
+                </div>
+            </template>
+
+        </div>
+    </nav>
+
+    <template id="product-template">
+        <div class="product">
+            <img class="product-img" src="" alt="">
+            <div class="content">
+                <div class="name"></div>
+                <div class="price"></div>
+            </div>
+            <button>Add to Cart</button>
+        </div>
+    </template>
+
+    <section>
+        <div class="side-bar">
+            <h1>Filter</h1>
+        </div>
+        <div class="products" id="product-list"></div>
+    </section>
+</body>
+</html>
