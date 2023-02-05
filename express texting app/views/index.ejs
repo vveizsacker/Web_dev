@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Texting App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>
+</head>
+<body>
+        <div class="container">
+
+                <div class="side-bar">
+                    <div class="list-users">
+                        <h2>Conntected Users</h2>
+                        <ul id="user-list">
+                            <li>User 1</li>
+                            <li>User 2</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <div class="chat-box ">
+        
+                    <div class="chat-header"><h2>CHAT ROOM NAME</h2></div>
+
+                    <div class="msg-display scrollable" id="msg-box"></div>
+                    
+                    <div class="send-msg-box">
+                        <form id ="f" action="">
+                            <input id="msg-input" name ="t1" type="text" placeholder="Aa">
+                            <button type="submit" class="btn" >send</button>
+                        </form>
+                    </div>
+                    
+                </div>
+                
+                <div class="side-bar">
+                    <h1>Settings</h1>
+                    
+                    <input type="color">
+                </div>
+                
+            </div>
+</body>
+</html>
